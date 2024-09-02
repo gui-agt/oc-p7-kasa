@@ -1,0 +1,6 @@
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); // 3 colonnes maximum
+    gap: 20px; // Espace entre les cartes
+    padding: 20px; // Padding autour de la galerie
+  }

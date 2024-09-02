@@ -1,0 +1,25 @@
+.collapse {
+    margin: 10px 0;
+  }
+  
+  .collapse__header {
+    background-color: #f5f5f5;
+    border: none;
+    padding: 10px;
+    text-align: left;
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .collapse__icon {
+    font-size: 20px;
+  }
+  
+  .collapse__content {
+    padding: 10px;
+    border-top: 1px solid #ddd;
+  }
+  
