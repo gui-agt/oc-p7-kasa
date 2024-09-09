@@ -2,28 +2,26 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { useParams, Navigate} from 'react-router-dom';
 import data from '../data/accomodations.json';
+import Slideshow from '../components/Slideshow'
 import './housing.scss';
 
 function Housing() {
   const { id } = useParams();
 
   // Trouver l'appartement correspondant à l'id
-  const apartment = data.find(apartment => apartment.id === id);
+  const house = data.find(house => house.id === id);
 
   // Gérer le cas où l'appartement n'existe pas
-  if (!apartment) {
+  if (!house) {
     return <Navigate to="*" />
   }
 
   return (
-    <div>
+    <div className="housing-page">
       <Header />
-      <div className="housing">
-        <h1>{apartment.title}</h1>
-        <img src={apartment.cover} alt={apartment.title} className="housing__image" />
-        <p>{apartment.location}</p>
-        {/* Ajouter plus de détails ici selon les informations disponibles */}
-      </div>
+      <main className="housing-page__content">
+        <Slideshow pictures={house.pictures} title={house.title}/>
+      </main>
       <Footer />
     </div>
   );

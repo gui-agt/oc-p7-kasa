@@ -1,4 +1,14 @@
 .header {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 45px;
+    margin-bottom: 50px;
+    max-width: 100%;
+    box-sizing: border-box;
+
+    @media (max-width: 768px) {
+        margin-top: 20px; // Réduit la marge en haut
+        margin-bottom: 27px; // Réduit la marge en bas
+    }
 }

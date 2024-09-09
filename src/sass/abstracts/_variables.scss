@@ -1,1 +1,31 @@
-// couleurs et typographies
+// Colors & typography
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+// Colors
+$primary-color: #FF6060;
+$light-grey: #f6f6f6;
+$white: #ffffff;
+$black: #000000;
+
+// Spacing
+$spacing-small: 8px;
+$spacing-medium: 16px;
+$spacing-large: 32px;
+
+// Typography
+$font-family-base: 'Montserrat', sans-serif;
+$font-size-small: 12px;
+$font-size-base: 18px;
+$font-size-large: 24px;
+$font-size-x-large: 48px;
+$line-height-base: 1.5;
+$line-height-heading: 1.2;
+$font-weight-base: 500;
+$font-weight-bold: 700;
+
+// Other
+$border-radius-small: 5px;
+$border-radius-medium: 10px;
+$border-radius-large: 25px;
+$max-width: 1240px;

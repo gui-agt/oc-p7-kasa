@@ -1,6 +1,28 @@
+@import '../sass/abstracts/variables';
+
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); // 3 colonnes maximum
-    gap: 20px; // Espace entre les cartes
-    padding: 20px; // Padding autour de la galerie
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); // 3 colonnes maximum?
+    gap: 30px;
+    max-width: 1280px;
+    padding: 56px 50px 43px;
+    margin: 0 auto;
+    background-color: $light-grey;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: $border-radius-large;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   }
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+

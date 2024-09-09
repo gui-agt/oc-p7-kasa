@@ -1,26 +1,57 @@
 
+@import '../sass/abstracts/variables';
+
 .card {
-  display: block;
+  position: relative;
   border-radius: 10px;
   overflow: hidden;
   text-decoration: none;
   color: inherit;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  width: 100%;
+  aspect-ratio: 1 /1;
   
   &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 200px;
+    height: 100%;
     object-fit: cover;
+    display: block;
   }
 
-  &__info {
-    padding: 10px;
-    background-color: #fff;
+  &:before {
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(10, 10, 10, 0) 42%,
+        rgba(4, 4, 4, 0.205) 99.99%,
+        rgba(0, 0, 0, 0.5) 100%
+      );
+    z-index: 1;
   }
 
   &__title {
-    font-size: 1.2rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60%;
+    color: white;
     margin: 0;
     font-weight: bold;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: $font-family-base;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-base;
+    z-index: 2;
   }
 }

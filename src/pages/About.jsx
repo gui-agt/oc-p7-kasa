@@ -25,18 +25,19 @@ const collapseData = [
 
 function About() {
     return (
-      <div>
+      <div className="about">
         <Header />
-        <Banner 
-                image={ImageMountains} 
-                text="" 
-                darkMode={false} 
-            />
-        <div className="about__content">
+        <main className="about__content">
+          <Banner 
+                  image={ImageMountains} 
+                  text="" 
+                  darkMode={false} 
+              />
+        
           {collapseData.map((item, index) => (
             <Collapse key={index} title={item.title} content={item.content} />
           ))}
-        </div>
+        </main>
         <Footer />
       </div>
     );

@@ -4,18 +4,20 @@ import ImageCliffs from '../assets/image_cliffs.png';
 import Gallery from '../components/Gallery';
 import Footer from '../components/Footer';
 // import Gallery from '../components/Gallery';
-// import Footer from '../components/Footer';
 
 function Home() {
   return (
-    <div>
+    <div className="home">
       <Header />
-      <Banner 
+      <main className="home__content">
+        
+        <Banner 
                 image={ImageCliffs} 
                 text="Chez vous, partout et ailleurs" 
                 darkMode={true} 
             />
-      <Gallery />
+        <Gallery />
+      </main>
       <Footer />
     </div>
   );
