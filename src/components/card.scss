@@ -11,6 +11,9 @@
   box-sizing: border-box;
   width: 100%;
   aspect-ratio: 1 /1;
+  @media (max-width: 670px) {
+    max-height: 255px;;
+  }
   
   &__image {
     position: absolute;

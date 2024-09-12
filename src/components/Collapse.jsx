@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './Collapse.scss';
+import './collapse.scss';
 import toggleClosed from '../assets/toggle_is_closed.svg'
 import toggleOpened from '../assets/toggle_is_opened.svg'
 

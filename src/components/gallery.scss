@@ -20,6 +20,13 @@
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   }
 
+  @media (max-width: 670px) {
+    padding: 0;
+    background-color: $white;
+    border-radius: 0;
+    gap: 20px;
+  }
+
   @media (max-width: 480px) {
     grid-template-columns: 1fr;
     gap: 20px;

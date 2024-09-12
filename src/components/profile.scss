@@ -1,0 +1,43 @@
+@import '../sass/abstracts/variables';
+@import '../sass/abstracts/mixins';
+
+.profile {
+    @include montserrat-base;
+    color: $primary-color;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    order: 2;
+    @media (max-width: 768px) {
+        order: 4;
+        font-size: $font-size-small;
+        bottom: 0;
+        align-items: end;
+    }
+
+    &__name {
+        display: block;
+        position: absolute;
+        right: 75px;
+        margin-bottom: 0;
+        text-align: right;
+        @media (max-width: 768px) {
+            right: 40px;
+            height: 32px;
+        }
+    } 
+
+    &__picture {
+        border-radius: 50%;
+        width: 64px;
+        height: 64px;
+        @media (max-width: 768px) {
+            width: 32px;
+            height: 32px;
+        }
+    }
+}

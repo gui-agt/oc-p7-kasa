@@ -33,10 +33,11 @@ function About() {
                   text="" 
                   darkMode={false} 
               />
-        
-          {collapseData.map((item, index) => (
+          <div className="collapse-container">
+            {collapseData.map((item, index) => (
             <Collapse key={index} title={item.title} content={item.content} />
-          ))}
+            ))}
+          </div>
         </main>
         <Footer />
       </div>

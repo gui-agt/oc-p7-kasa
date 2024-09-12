@@ -13,7 +13,12 @@ function Home() {
         
         <Banner 
                 image={ImageCliffs} 
-                text="Chez vous, partout et ailleurs" 
+                text={
+                  <>
+                    <span>Chez vous, </span>
+                    <span>partout et ailleurs</span>
+                  </>
+                }
                 darkMode={true} 
             />
         <Gallery />

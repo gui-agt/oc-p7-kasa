@@ -5,6 +5,10 @@
     max-width: 100%;
     max-height: 400px;
     overflow: hidden;
+    margin-bottom: 30px;
+    @media (max-width: 768px) {
+      max-height: 255px;
+    }
 
     &__container {
         display: flex;
@@ -21,6 +25,10 @@
       object-position: center;
       flex-shrink: 0; /* Empêche les images de se réduire ? */
       border-radius: $border-radius-large;
+      @media (max-width: 768px) {
+        border-radius: $border-radius-medium;
+        max-height: 255px;
+      }
     }
   
     &__controls {
@@ -31,6 +39,12 @@
       display: flex;
       justify-content: space-between;
       transform: translateY(-50%);
+
+      & img {
+        @media (max-width: 768px) {
+          width: 12px;
+        }
+      }
     }
 
     &__control--prev, &__control--next {
@@ -53,7 +67,10 @@
       color: #fff;
       padding: 5px 10px;
       border-radius: 5px;
-      background: rgba(0, 0, 0, 0.5); /* Fond semi-transparent pour le texte à retirer plus tard */
+      background: rgba(0, 0, 0, 0.1);
+      @media (max-width: 768px) {
+        visibility: hidden;
+      }
     }
   }
   
