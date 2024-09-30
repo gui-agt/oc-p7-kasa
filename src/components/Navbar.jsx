@@ -26,7 +26,3 @@ function Navbar() {
 }
 
 export default Navbar
-
-// Ancien code qui posait problème voir pk
-// <li><NavLink to="/" exact activeClassName="active">Accueil</NavLink></li>
-// <li><NavLink to="/about" activeClassName="active">A propos</NavLink></li>

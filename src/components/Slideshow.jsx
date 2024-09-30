@@ -31,11 +31,6 @@ function Slideshow ({ pictures, title }) {
 
     return (
             <div className="slideshow">
-                {/* <img
-                    src={pictures[currentIndex]}
-                    alt={`photographie ${currentIndex + 1} logement ${title}`}
-                    className="slideshow__image"
-                /> */}
                 
                 <div className="slideshow__container" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
                     {pictures.map((pic, index) => (

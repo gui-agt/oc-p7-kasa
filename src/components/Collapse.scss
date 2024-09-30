@@ -2,7 +2,7 @@
 @import '../sass/abstracts/mixins';
 
 .about__content .collapse {
-    margin-bottom: 30px;
+    // margin-bottom: 30px;
     padding: 0 100px;
     @media screen and (max-width: 768px){
       margin-bottom: 20px;
@@ -62,4 +62,17 @@
   @media (max-width: 768px) {
     width: 16px;
   }  
+}
+
+.collapse__content {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.7s ease, opacity 0.7s ease;
+}
+
+.collapse__content.is-open {
+  max-height: none;
+  opacity: 1;
+
 }
