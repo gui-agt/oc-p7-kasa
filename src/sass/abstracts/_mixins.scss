@@ -1,6 +1,6 @@
-// fonctions réutilisables
+// reusable functions
 @mixin collapse-style-about-page {
-    background-color: #FF6060;
+    background-color: #ff6060;
     border: none;
     padding: 10px;
     text-align: left;
@@ -18,11 +18,11 @@
     @media (max-width: 768px) {
         font-size: $font-size-small;
         height: 30px;
-    }  
+    }
 }
 
 @mixin collapse-style-housing-page {
-    background-color: #FF6060;
+    background-color: #ff6060;
     border: none;
     padding: 10px;
     text-align: left;
@@ -40,7 +40,7 @@
     @media (max-width: 768px) {
         font-size: $font-size-small;
         height: 30px;
-    }  
+    }
 }
 
 @mixin collapse-style-content {
@@ -54,7 +54,7 @@
     @media (max-width: 768px) {
         font-size: $font-size-small;
         padding: 0px;
-    }  
+    }
 }
 
 @mixin montserrat-base {

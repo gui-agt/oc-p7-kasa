@@ -13,12 +13,11 @@
         width: 100%;
     }
 
-
     &__title {
         color: $primary-color;
         font-size: $font-size-x-large;
         font-weight: 500;
-        
+
         @media (max-width: 768px) {
             font-size: $font-size-base;
         }

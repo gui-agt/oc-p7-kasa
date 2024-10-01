@@ -4,75 +4,74 @@
 .about__content .collapse {
     // margin-bottom: 30px;
     padding: 0 100px;
-    @media screen and (max-width: 768px){
-      margin-bottom: 20px;
-      padding: 0;
+    @media screen and (max-width: 768px) {
+        margin-bottom: 20px;
+        padding: 0;
     }
-  }
-  
-  .about__content .collapse__header {
+}
+
+.about__content .collapse__header {
     @include collapse-style-about-page;
-    @media screen and (max-width: 768px){
-      height: 30px;
+    @media screen and (max-width: 768px) {
+        height: 30px;
     }
-  }
-  
-  .about__content .collapse__icon {
+}
+
+.about__content .collapse__icon {
     font-size: 20px;
-  }
-  
-  .about__content .collapse__content {
+}
+
+.about__content .collapse__content {
     @include collapse-style-content;
-  }
+}
 
 .housing-page .housing-collapse {
     display: flex;
     gap: 75px;
     margin-bottom: 30px;
-    @media screen and (max-width: 1040px){
-      gap: 20px;
+    @media screen and (max-width: 1040px) {
+        gap: 20px;
     }
-    
-    @media screen and (max-width: 768px){
-      flex-direction: column;
-      gap: 20px;
-      margin-bottom: 25px;
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 25px;
     }
 }
-  
-  .housing-page__content .collapse {
+
+.housing-page__content .collapse {
     padding: 0;
     margin-bottom: 0;
     width: 100%;
     gap: 75px;
-    
-    &__header {
-    @include collapse-style-housing-page;
-    }
-  }
 
-  .housing-page__content .collapse__content {
+    &__header {
+        @include collapse-style-housing-page;
+    }
+}
+
+.housing-page__content .collapse__content {
     @include collapse-style-content;
     @media (max-width: 768px) {
-      font-size: $font-size-small;
-    }  
-  }
+        font-size: $font-size-small;
+    }
+}
 
 .collapse__icon img {
-  @media (max-width: 768px) {
-    width: 16px;
-  }  
+    @media (max-width: 768px) {
+        width: 16px;
+    }
 }
 
 .collapse__content {
-  max-height: 0;
-  opacity: 0;
-  overflow: hidden;
-  transition: max-height 0.7s ease, opacity 0.7s ease;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.7s ease, opacity 0.7s ease;
 }
 
 .collapse__content.is-open {
-  max-height: none;
-  opacity: 1;
-
+    max-height: none;
+    opacity: 1;
 }

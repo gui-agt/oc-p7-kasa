@@ -1,5 +1,7 @@
-import { NavLink } from 'react-router-dom'
- 
+import { NavLink } from 'react-router-dom';
+
+// Navbar component: renders a navigation menu with links to the home and about pages, highlighting the active link.
+
 function Navbar() {
     return (
         <nav>
@@ -22,7 +24,7 @@ function Navbar() {
                 </li>
             </ul>
         </nav>
-    )
+    );
 }
 
-export default Navbar
+export default Navbar;

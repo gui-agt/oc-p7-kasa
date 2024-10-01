@@ -52,11 +52,9 @@
         }
     }
 
-        & span {
-            @media (max-width: 768px) {
-                display: block;
-            }
+    & span {
+        @media (max-width: 768px) {
+            display: block;
         }
-   
+    }
 }
-

@@ -1,14 +1,14 @@
-// Import des abstracts (variables, mixins, etc.)
+// Import abstracts (variables, mixins, etc.)
 @import 'abstracts/variables';
 @import 'abstracts/mixins';
 
-// Import des styles de base
+// Import base styles
 @import 'base/reset';
 @import 'base/typography';
 @import 'base/global';
 
-// Import des styles des composants
+// Import components styles
 @import 'components/components';
 
-// Import des styles des pages
+// Import pages styles
 @import 'pages/pages';

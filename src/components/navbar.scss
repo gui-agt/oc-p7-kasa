@@ -30,7 +30,7 @@ nav {
             text-decoration: none;
             color: $black;
             font-size: $font-size-large;
-            
+
             @media (max-width: 768px) {
                 font-size: $font-size-small;
             }
@@ -40,7 +40,7 @@ nav {
             }
 
             &.active {
-                text-decoration: underline; // Soulignement pour la page active
+                text-decoration: underline; // Underlying active page
             }
         }
     }

@@ -7,17 +7,17 @@
     margin: auto;
     padding: 0 100px;
     @media (max-width: 768px) {
-      padding: 0 20px;
+        padding: 0 20px;
     }
-  }
-  
-  .about__content {
-    flex: 1;
-  }
+}
 
- .about footer {
+.about__content {
+    flex: 1;
+}
+
+.about footer {
     margin-top: 10px;
     @media screen and (max-width: 768px) {
-      margin-top: 0px;
+        margin-top: 0px;
     }
- }
+}
